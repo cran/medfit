@@ -3,6 +3,11 @@
 \name{MediationData}
 \alias{MediationData}
 \title{MediationData S7 Class}
+\usage{
+MediationData(a_path, b_path, c_prime, estimates, vcov, sigma_m, sigma_y,
+  family_m, family_y, treatment, mediator, outcome, mediator_predictors,
+  outcome_predictors, data, n_obs, converged, source_package)
+}
 \arguments{
 \item{a_path}{Numeric scalar: effect of treatment on mediator (a path)}
 
@@ -17,6 +22,15 @@
 \item{sigma_m}{Numeric scalar or NULL: residual SD for mediator model}
 
 \item{sigma_y}{Numeric scalar or NULL: residual SD for outcome model}
+
+\item{family_m}{GLM \code{family} object (or NULL): family/link for the mediator
+model (e.g. \code{gaussian()}, \code{binomial()}). Defaults to unset (empty), which
+consumers treat as Gaussian.}
+
+\item{family_y}{GLM \code{family} object (or NULL): family/link for the outcome
+model. Required by scale-free estimands (e.g. probmed) to simulate
+non-Gaussian potential outcomes on the correct scale. Defaults to unset
+(empty), treated as Gaussian.}
 
 \item{treatment}{Character scalar: name of treatment variable}
 

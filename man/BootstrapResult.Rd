@@ -4,17 +4,8 @@
 \alias{BootstrapResult}
 \title{BootstrapResult S7 Class}
 \usage{
-BootstrapResult(
-  estimate = integer(0),
-  ci_lower = integer(0),
-  ci_upper = integer(0),
-  ci_level = integer(0),
-  boot_estimates = integer(0),
-  n_boot = integer(0),
-  method = character(0),
-  call = quote({
- })
-)
+BootstrapResult(estimate, ci_lower, ci_upper, ci_level, boot_estimates,
+  n_boot, method, call)
 }
 \arguments{
 \item{estimate}{Numeric scalar: point estimate of the statistic}

@@ -30,6 +30,21 @@ bibentry(
   doi     = "10.1207/s15327906mbr3901_4"
 )
 
+## Methods: resampling strategies for indirect effects in multiple-mediator
+## models -- the basis for medfit's parallel and serial mediation support.
+bibentry(
+  bibtype = "Article",
+  title   = "Asymptotic and resampling strategies for assessing and comparing indirect effects in multiple mediator models",
+  author  = c(person("Kristopher J.", "Preacher"),
+              person("Andrew F.", "Hayes")),
+  journal = "Behavior Research Methods",
+  year    = "2008",
+  volume  = "40",
+  number  = "3",
+  pages   = "879--891",
+  doi     = "10.3758/brm.40.3.879"
+)
+
 ## Methods: RMediation and confidence intervals for mediation (the ecosystem
 ## medfit underpins).
 bibentry(
@@ -43,4 +58,18 @@ bibentry(
   number  = "3",
   pages   = "692--700",
   doi     = "10.3758/s13428-011-0076-x"
+)
+
+## Methods: four-way decomposition of mediation and interaction -- the basis
+## for medfit's treatment-by-mediator interaction (InteractionMediationData).
+bibentry(
+  bibtype = "Article",
+  title   = "A Unification of Mediation and Interaction: A Four-Way Decomposition",
+  author  = c(person("Tyler J.", "VanderWeele")),
+  journal = "Epidemiology",
+  year    = "2014",
+  volume  = "25",
+  number  = "5",
+  pages   = "749--761",
+  doi     = "10.1097/EDE.0000000000000121"
 )
